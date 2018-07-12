@@ -5,16 +5,16 @@ function mostrar()
 	nota = Math.floor(Math.random() * 10 + 1);
 
 	if (nota >= 9){
-		alert("Excelente");
+		alert("Excelente "+nota);
 }
 
 	else if (nota >=4 && nota <9) {
 	
-	alert("Aprobò");
+	alert("Aprobò "+nota);
 
 }
 	else  {
-	alert("Vamos, la proxima se puede");
+	alert("Vamos, la proxima se puede "+nota);
 }
 
 	//Genero el número RANDOM entre 1 y 10 
