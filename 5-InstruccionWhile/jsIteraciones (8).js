@@ -8,29 +8,34 @@ function mostrar()
 	
 	var respuesta;
 
-respuesta= prompt("Desea ingresar otro numero?");
-
-while (respuesta =="si"){
-
+do{
+	
 	numero= parseInt(prompt("Ingrese un número entero"));
 
 	if (numero>= 0){
 
 		positivo=positivo + numero;
+		
 	}
 	else {
 
 		negativo = negativo * numero;
-
-	} 
+		contador++;
+	}
 
 	respuesta= prompt("Desea ingresar otro numero?");
 
-	}//while
+} while (respuesta =="si");
 
-
-
+ 	
 document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
 
-}//FIN DE LA FUNCIÓN
+if (contador == 0){
+	
+	negativo = 0;
+
+}
+document.getElementById('producto').value=negativo;
+}
+
+//FIN DE LA FUNCIÓN

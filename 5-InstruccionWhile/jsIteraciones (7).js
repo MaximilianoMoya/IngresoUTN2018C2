@@ -3,21 +3,23 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
+	var numero;
 	var respuesta;
 
-respuesta = prompt("Desea ingresar un numero?");
+do{
 
-while(respuesta == "si"){
+	numero = parseInt(prompt("Desea ingresar un numero?"));
+ 	acumulador = acumulador + numero;
+	contador ++;
 
-	acumulador = acumulador + parseInt(prompt("Ingrese un número : "));
+	respuesta =prompt("Desea continuar?");
 
-	respuesta = prompt("Desea ingresar otro numero?");
 
-	contador+=1;
+}while(respuesta == "si");
 
-}
-
+	
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
+
