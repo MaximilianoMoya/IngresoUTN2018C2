@@ -51,7 +51,7 @@ for(var i = 0; i < 5; i++){
 
 promedio=acumNotas/5;
 
-alert("El promedio de las notas totales es: " + promedio + "/n Nota màs baja: " + notaBaja + "/n Sexo nota baja: " + sexoNotaBaja + "/n Cantidad de varones que su nota haya sido >=6: " + contVarones);
+alert("El promedio de las notas totales es: " + promedio + "\n Nota màs baja: " + notaBaja + "\n Sexo nota baja: " + sexoNotaBaja + "\n Cantidad de varones que su nota haya sido >=6: " + contVarones);
 }
 
 
